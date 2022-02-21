@@ -1,0 +1,22 @@
+/*Como funciona o estilo em cascata do CSS?
+    Como é uma folha de estilos em cascata, 
+    a cascata vai descendo, e o que eu faço no 
+    elemento pai reflete para o elemento filho.*/
+body{
+    background: #CCCCCC;
+}
+
+h1{
+    background: #CCCCCC;
+}
+
+p{
+    text-align: center;
+    background: #CCCCCC;
+}
+
+/*aqui o navegador vai procurar todas as TAGS strongs
+que estiver dentro da TAG em*/
+em strong{
+    color: red;
+}
