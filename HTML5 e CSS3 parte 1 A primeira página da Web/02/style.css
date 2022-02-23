@@ -8,11 +8,17 @@ body{
 
 h1{
     background: #CCCCCC;
+    text-align: center
 }
 
 p{
     text-align: center;
     background: #CCCCCC;
+}
+
+/*chamando a tag pelo id*/
+#missao{
+    font-size: 20px;
 }
 
 /*aqui o navegador vai procurar todas as TAGS strongs
