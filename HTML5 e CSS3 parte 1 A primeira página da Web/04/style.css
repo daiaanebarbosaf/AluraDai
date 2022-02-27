@@ -1,9 +1,13 @@
-/*Como funciona o estilo em cascata do CSS?
-    Como é uma folha de estilos em cascata, 
-    a cascata vai descendo, e o que eu faço no 
-    elemento pai reflete para o elemento filho.*/
 body{
     background: #CCCCCC;
+}
+
+
+#banner{
+    /*O width é a propriedade
+     que devemos manipular para alterar 
+     a largura do elemento.*/
+    width: 100%;
 }
 
 h1{
@@ -16,13 +20,10 @@ p{
     background: #CCCCCC;
 }
 
-/*chamando a tag pelo id*/
 #missao{
     font-size: 20px;
 }
 
-/*aqui o navegador vai procurar todas as TAGS strongs
-que estiver dentro da TAG em*/
 em strong{
     color: red;
 }
