@@ -1,6 +1,6 @@
-body{
-    /*background: #CCCCCC;*/
-}
+/*body{
+    background: #CCCCCC;
+}*/
 
 
 #banner{
@@ -11,12 +11,15 @@ body{
 }
 
 .principal{
-    background: #CCCCCC ;
+    background: #CCCCCC;
+    /*adicionando espaçamento interno para 
+    todos os lados*/
+    padding: 30px;
 }
 
-h1{
-    background: #CCCCCC;
-    text-align: center
+.titulo-centralizado{
+    /*background: #CCCCCC;*/
+    text-align: center;
 }
 
 p{
@@ -32,15 +35,38 @@ em strong{
     color: red;
 }
 
-/*criando uma classe em css*/
+/*criando uma classe em css.
+A class serve para replicarmos 
+a aplicação do nosso CSS, sem 
+precisar copiar e colá-lo em vários 
+elementos. Aplicamos a classe para isso.*/
 .itens{
     font-style: italic;
 }
 
 .beneficios{
     background: #FFFFFF;
+    /*adicionando espaçamento interno para 
+    todos os lados*/
+    padding: 20px;
 }
 
-h2{
-    text-align: center;
+ul{
+    /*O display inline block 
+    ocupa só o tamanho do conteúdo, 
+    mas me deixa mexer na largura e 
+    espaçamentos.*/
+    display: inline-block;
+    /*Neste comando, conseguimos alinhar
+    pela linha de cima*/
+    vertical-align: top;
+    /*mexendo na largura da lista*/
+    width: 20%;
+    /*com esse comando estamos aumentando
+    o espaçamento externo*/
+    margin-right: 15%;
+}
+
+.imagembeneficios {
+    width: 50%;
 }
