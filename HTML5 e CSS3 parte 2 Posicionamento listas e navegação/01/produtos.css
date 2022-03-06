@@ -1,0 +1,25 @@
+header{
+    background: #BBBBBB;
+}
+
+nav li{
+    /*Inline, ele só ocupa o tamanho dele.*/
+    display: inline;
+    /*aqui definiremos o espaçamento entre um item e outro através da margem. E ela é definida assim: primeiro para o topo, depois para a direita, terceiro para baixo e por ultimo para a esquerda. Como queremos aumentar somente para a esquerda, então só trocaremos o valor dessa.*/
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    /*transformando todas as letras da TAG a em maiúsculas.
+    Explicação do Teacher:
+    A propriedade text-transform é a responsável pela transformação do texto para maiúsculo, quando usamos o valor uppercase.*/
+    text-transform: uppercase;
+    color: #000000;
+    /*peso da fonte em negrito*/
+    font-weight: bold;
+    /*tamanho da fonte*/
+    font-size: 22px;
+    /*aqui retiramos o sublinhado padrão*/
+    text-decoration: none;
+
+}
