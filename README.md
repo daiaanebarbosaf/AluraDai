@@ -1,2 +1,2 @@
 # Alura
- Exercícios do curso
+ Exercícios dos cursos da Formação para Front-End.
