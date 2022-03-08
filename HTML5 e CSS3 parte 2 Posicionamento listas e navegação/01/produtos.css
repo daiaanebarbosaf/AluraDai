@@ -1,18 +1,57 @@
 header{
     background: #BBBBBB;
+    padding: 20px 0;
+    /*espaçamento para cima e para baixo de 20px,
+    e de 0 para a direita e esquerda.*/
 }
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    /*aqui as margens se calcuam sozinhas, pois 
+    se eu boto 50 de um lado e 50 do outro, pode 
+    ser que numa tela de 1.300 pixels, ele não fique 
+    centralizado, se eu boto 200 de um lado e 200 
+    do outro, pode ser que numa tela de 1.000 pixels, 
+    ele não fique centralizado, por isso, a gente 
+    precisa que essa margem da direita e a margem da 
+    esquerda, elas se calculem sozinhas, elas sejam 
+    automáticas.*/
+}
+/*essa classe está centralizando 
+o que está dentro do cabeçalho.*/
+
+nav {
+    position: absolute;
+    /*Com o position: absolute, eu consigo 
+    posicionar meu elemento em qualquer 
+    lugar da página.*/
+    top: 100px;
+    right: 0;
+}
+
+
 
 nav li{
     /*Inline, ele só ocupa o tamanho dele.*/
     display: inline;
-    /*aqui definiremos o espaçamento entre um item e outro através da margem. E ela é definida assim: primeiro para o topo, depois para a direita, terceiro para baixo e por ultimo para a esquerda. Como queremos aumentar somente para a esquerda, então só trocaremos o valor dessa.*/
+    /*aqui definiremos o espaçamento entre um item 
+    e outro através da margem. E ela é definida assim: 
+    primeiro para o topo, depois para a direita, terceiro 
+    para baixo e por ultimo para a esquerda. Como queremos 
+    aumentar somente para a esquerda, então só trocaremos 
+    o valor dessa.*/
     margin: 0 0 0 15px;
 }
 
 nav a{
-    /*transformando todas as letras da TAG a em maiúsculas.
+    /*transformando todas as letras da TAG a em 
+    maiúsculas.
     Explicação do Teacher:
-    A propriedade text-transform é a responsável pela transformação do texto para maiúsculo, quando usamos o valor uppercase.*/
+    A propriedade text-transform é a responsável 
+    pela transformação do texto para maiúsculo, 
+    quando usamos o valor uppercase.*/
     text-transform: uppercase;
     color: #000000;
     /*peso da fonte em negrito*/
