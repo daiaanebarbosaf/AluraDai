@@ -17,7 +17,10 @@ header{
     ele não fique centralizado, por isso, a gente 
     precisa que essa margem da direita e a margem da 
     esquerda, elas se calculem sozinhas, elas sejam 
-    automáticas.*/
+    automáticas.
+    Delegamos para o navegador fazer a conta de 
+    calcular a largura que resta, dividir por dois, 
+    e adicionar metade em cada um dos lados.*/
 }
 /*essa classe está centralizando 
 o que está dentro do cabeçalho.*/
@@ -61,4 +64,51 @@ nav a{
     /*aqui retiramos o sublinhado padrão*/
     text-decoration: none;
 
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    /*largura da lista por inteiro*/
+    padding: 50px 0;
+}
+
+.produtos li{
+    /*Como o inline-block se comporta?
+    O tamanho pode ser ajustado, tanto 
+    na largura, quanto na altura.*/
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    /*largura de cada item*/
+    vertical-align: top;
+    /*os itens vão recarrecar sempre pela linha de cima*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*essa linha de comando faz com que o item
+    com o tamanho dele*/
+
+    /*fazendo a borda
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;*/
+
+    /*declaração unificada da borda*/
+    border: 2px solid #000000;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
 }
