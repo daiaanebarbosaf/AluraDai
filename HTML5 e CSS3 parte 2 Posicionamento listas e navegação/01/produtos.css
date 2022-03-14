@@ -89,13 +89,21 @@ nav a{
     /*essa linha de comando faz com que o item
     com o tamanho dele*/
 
-    /*fazendo a borda
+    /*fazendo a borda.
+    Na estrutura de "caixas" do CSS, 
+    a borda fica posicionada entre o 
+    padding e a margin
+    cor da linha
     border-color: #000000;
+    tamanho da linha
     border-width: 2px;
+    estilo da linha
     border-style: solid;*/
 
     /*declaração unificada da borda*/
     border: 2px solid #000000;
+    /*arredondando os campus*/
+    border-radius: 10px;
 }
 
 .produtos h2{
