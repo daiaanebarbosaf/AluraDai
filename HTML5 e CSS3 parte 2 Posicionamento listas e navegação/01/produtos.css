@@ -65,6 +65,16 @@ nav a{
     text-decoration: none;
 
 }
+/*para mapear o comportamento dos links que estão 
+dentro do menu de navegação, quando o mouse 
+passar por cima do elemento usamos o hover, é 
+quando mouse está por cima do elemento.*/
+nav a:hover{
+    /*essa cor vai aparecer ao passar do mouse*/
+    color: #C78C19;
+     /*o sublinhado vai aparecer ao passar do mouse*/
+    text-decoration: underline;
+}
 
 .produtos{
     width: 940px;
@@ -103,7 +113,7 @@ nav a{
     /*declaração unificada da borda*/
     border: 2px solid #000000;
     /*arredondando os campus*/
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 
 .produtos h2{
