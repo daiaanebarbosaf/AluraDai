@@ -116,6 +116,22 @@ nav a:hover{
     border-radius: 10px; 
 }
 
+/*No hover, mapeamos o comportamento do mouse por cima do elemento, e podemos usar isso para destacar visualmente o elemento em questão.*/
+.produtos li:hover{
+    border-color:#C78C19;
+}
+
+/*quando o mouse estiver sendo clicado, o conteúdo
+vai ficar verde*/
+.produtos li:active{
+    border-color:#088C19;
+}
+
+/*quando passar o mouse por cima do h2, ele vai mudar de tamanho*/
+.produtos li:hover h2{  
+    font-size: 34px;
+}
+
 .produtos h2{
     font-size: 30px;
     font-weight: bold;
@@ -129,4 +145,17 @@ nav a:hover{
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0 0;
+}
+
+footer{
+    text-align:center;
+    /*colocanco uma imagem de fundo*/
+    background:url("bg.jpg");
+    padding:40px 0;
+}
+
+.copyrights{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin:20px 0 0;
 }
