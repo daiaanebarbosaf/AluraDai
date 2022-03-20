@@ -26,6 +26,8 @@ header{
     calcular a largura que resta, dividir por dois, 
     e adicionar metade em cada um dos lados.*/
 }
+/*essa classe está centralizando 
+o que está dentro do cabeçalho.*/
 
 nav {
     position: absolute;
@@ -78,45 +80,6 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.produtos{
-    width: 940px;
-    margin: 0 auto;
-    /*largura da lista por inteiro*/
-    padding: 50px 0;
-}
-
-.produtos li{
-    /*Como o inline-block se comporta?
-    O tamanho pode ser ajustado, tanto 
-    na largura, quanto na altura.*/
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    /*largura de cada item*/
-    vertical-align: top;
-    /*os itens vão recarrecar sempre pela linha de cima*/
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    /*essa linha de comando faz com que o item
-    com o tamanho dele*/
-
-    /*fazendo a borda.
-    Na estrutura de "caixas" do CSS, 
-    a borda fica posicionada entre o 
-    padding e a margin
-    cor da linha
-    border-color: #000000;
-    tamanho da linha
-    border-width: 2px;
-    estilo da linha
-    border-style: solid;*/
-
-    /*declaração unificada da borda*/
-    border: 2px solid #000000;
-    /*arredondando os campus*/
-    border-radius: 10px; 
-}
 
 #banner{
     /*O width é a propriedade
@@ -141,7 +104,7 @@ nav a:hover{
     text-align: center;
 }*/
 
-p{
+.paragrafo{
     text-align: center;
     background: #CCCCCC;
 }
@@ -174,7 +137,7 @@ elementos. Aplicamos a classe para isso.*/
     text-align: center;
 }*/
 
-ul{
+.beneficios-itens{
     /*O display inline block 
     ocupa só o tamanho do conteúdo, 
     mas me deixa mexer na largura e 
@@ -192,4 +155,17 @@ ul{
 
 .imagembeneficios {
     width: 50%;
+}
+
+footer{
+    text-align:center;
+    /*colocanco uma imagem de fundo*/
+    background:url("bg.jpg");
+    padding:40px 0;
+}
+
+.copyrights{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin:20px 0 0;
 }
