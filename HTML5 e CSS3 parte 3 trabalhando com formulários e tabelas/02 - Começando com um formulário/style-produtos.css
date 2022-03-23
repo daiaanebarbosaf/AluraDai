@@ -174,9 +174,18 @@ footer{
 form label{
     display: block;
     font-size: 20px;
+    /*espaçamento entre uma label e outra*/
+    margin: 0 0 10px;
+
 }
 
 form input{
     display: block;
+    margin: 0 0 20px;
+    /*A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.Aumentando o tamanho do campo para cima e para baixo*/
+    padding: 10px 25px;
+    /*aumentando a largura do campo, para os lados.*/
+    width:50%;
+
 
 }
