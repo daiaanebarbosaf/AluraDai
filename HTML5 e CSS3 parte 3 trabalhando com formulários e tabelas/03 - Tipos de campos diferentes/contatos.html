@@ -46,7 +46,28 @@
 
                 <label for="telefone">Telefone</label>
                 <input type="text" id="telefone">
-                    
+
+                <label for="mensagem">Mensagem:</label>
+                <!--tag de conteúdo que permite o usuário digitar mais de uma linha.
+                As cols(colunas) e rows(linhas) nos ajudam a definir o tamanho que queremos.-->
+                <textarea cols="68" rows="10" id="mensagem"></textarea>
+                <div>
+                    <p>Como prefere o nosso contato?</p>
+                    <!--radio box, esse campo nos possibilita selecionar uma opção, em um único campo.-->
+                    <label for="radio-email">Email</label>
+                    <input type="radio" name="contato" value="email" id="radio-email">
+
+                    <label for="radio-telefone">Telefone</label>
+                    <!--O name contato faz com que só consiga marcar uma opção por vez, sem ele o usuário poderá marcar todos de uma vez.
+                    Explicação do Teacher: A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado.-->
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+
+                    <label for="radio-whatsapp">WhatsApp</label>
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                </div>
+
+                <!--aqui podemos ver que podemos fazer um label com input juntos e não precisamos criar um for e um id para se comunicarem-->
+                <label><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
 
                 <input type="submit" value="Enviar formulário">
                 <!--o input sumit é responsável por enviar os dados.
