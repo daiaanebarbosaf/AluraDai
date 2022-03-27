@@ -39,35 +39,45 @@
             <form class="formulario">
                 <label for="nome-sobrenome">Nome e Sobrenome:</label>
                 <!--Label é o nome da etiqueta, nome do campo da entrada de dados.-->
-                <input type="text" id="nome-sobrenome">
+                <input type="text" id="nome-sobrenome" class="input-padrao">
                 <!--tag para entrada de dados, que no caso vai ser a entrada de um nome, então o tipo dela vai ser text-->
                 <label for="email">Email:</label>
-                <input type="text" id="email">
+                <input type="text" id="email" class="input-padrao">
 
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
+                <input type="text" id="telefone" class="input-padrao">
 
                 <label for="mensagem">Mensagem:</label>
                 <!--tag de conteúdo que permite o usuário digitar mais de uma linha.
                 As cols(colunas) e rows(linhas) nos ajudam a definir o tamanho que queremos.-->
-                <textarea cols="68" rows="10" id="mensagem"></textarea>
+                <textarea cols="60" rows="10" id="mensagem"></textarea>
                 <div>
                     <p>Como prefere o nosso contato?</p>
                     <!--radio box, esse campo nos possibilita selecionar uma opção, em um único campo.-->
-                    <label for="radio-email">Email</label>
-                    <input type="radio" name="contato" value="email" id="radio-email">
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                    
 
-                    <label for="radio-telefone">Telefone</label>
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
                     <!--O name contato faz com que só consiga marcar uma opção por vez, sem ele o usuário poderá marcar todos de uma vez.
                     Explicação do Teacher: A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado.-->
-                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
 
-                    <label for="radio-whatsapp">WhatsApp</label>
-                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp</label>
+                    
                 </div>
 
+                <div>
+                    <p>Qual o horário prefere ser atendido?</p>
+                    <!--A estrutura da tag <select> é composta de um ou mais <option>.
+                    O <option serve para criarmos os itens selecionáveis de um <select>-->
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </div>
+                
                 <!--aqui podemos ver que podemos fazer um label com input juntos e não precisamos criar um for e um id para se comunicarem-->
-                <label><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+                <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
 
                 <input type="submit" value="Enviar formulário">
                 <!--o input sumit é responsável por enviar os dados.
