@@ -171,7 +171,7 @@ footer{
     margin: 40px 0;
 }
 
-form label{
+form label, form p{
     display: block;
     font-size: 20px;
     /*espaçamento entre uma label e outra*/
@@ -179,13 +179,16 @@ form label{
 
 }
 
-form input{
+/*aqui tanto os campos de entrada como o campo de texto terão as mesmas configurações*/
+.input-padrao{
     display: block;
     margin: 0 0 20px;
     /*A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.Aumentando o tamanho do campo para cima e para baixo*/
     padding: 10px 25px;
     /*aumentando a largura do campo, para os lados.*/
     width:50%;
+}
 
-
+.checkbox{
+    margin:20px 0;
 }
