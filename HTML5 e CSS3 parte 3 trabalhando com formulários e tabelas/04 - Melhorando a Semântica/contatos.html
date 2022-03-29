@@ -18,7 +18,8 @@
             da imagem, que é onde buscamos o conteúdo 
             que será exibido.-->
             <div class="caixa">
-                <h1><img src="logo.png"></h1>
+                <!--Usamos o alt para fazer uma breve descrição do que é a imagem e assim dar mais acessibilidade-->
+                <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
 
                 <nav>
                     <ul>
@@ -54,8 +55,12 @@
                 <!--tag de conteúdo que permite o usuário digitar mais de uma linha.
                 As cols(colunas) e rows(linhas) nos ajudam a definir o tamanho que queremos.-->
                 <textarea cols="60" rows="10" id="mensagem" class="input-padrao" required></textarea>
-                <div>
-                    <p>Como prefere o nosso contato?</p>
+                <!--A TAG fieldset serve para agrupar inputs de forma mais organizada.-->
+                <fieldset>
+                    <!--Ao invés de usarmos parágrafos dentro do fieldset usamos legend. 
+                    Explicação do teacher:
+                    A tag <legend> que usamos para um título de um grupo de campos em qualquer formulário.-->
+                    <legend>Como prefere o nosso contato?</legend>
                     <!--radio box, esse campo nos possibilita selecionar uma opção, em um único campo.-->
                     <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
                     
@@ -67,10 +72,10 @@
                     <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
                     <!--O checked faz com que uma opção fique marda por padrão, pq assim voce sujere ao usuario o que você quer.-->
                     
-                </div>
+                </fieldset>
 
-                <div>
-                    <p>Qual o horário prefere ser atendido?</p>
+                <fieldset>
+                    <legend>Qual o horário prefere ser atendido?</legend>
                     <!--A estrutura da tag <select> é composta de um ou mais <option>.
                     O <option serve para criarmos os itens selecionáveis de um <select>-->
                     <select>
@@ -78,7 +83,7 @@
                         <option>Tarde</option>
                         <option>Noite</option>
                     </select>
-                </div>
+                </fieldset>
                 
                 <!--aqui podemos ver que podemos fazer um label com input juntos e não precisamos criar um for e um id para se comunicarem-->
                 <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
