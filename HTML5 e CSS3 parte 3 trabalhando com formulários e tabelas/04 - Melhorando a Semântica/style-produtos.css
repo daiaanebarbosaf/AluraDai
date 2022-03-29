@@ -192,3 +192,27 @@ form label, form legend{
 .checkbox{
     margin:20px 0;
 }
+
+.botao-enviar{
+    /*aqui aumentamos o tamanho do botão,mexendo na largura dela, fazendo com que ele ocupe 40% da página.*/
+    width: 40%;
+    /*com o padding daremos o espaçamento entre a borda e o texto. 15px para cima e para baixo e 0 para os lados.*/
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size:18px;
+    border: none;
+    /*arredondando a borda*/
+    border-radius: 5px;
+    /*esse elemento faz com que a cor do botão mude gradativamente, deixando essa transição mais suave.
+    Explicação do Teacher:
+    Utilizamos a propriedade transition para prover uma transição visual de um elemento.*/
+    transition: 1s background;
+    /*para transformar o cursor em uma mãozinha, assim indicando para o usuário que é possível clicar.*/
+    cursor:pointer;
+}
+
+.botao-enviar:hover{
+    background: darkorange;
+}
