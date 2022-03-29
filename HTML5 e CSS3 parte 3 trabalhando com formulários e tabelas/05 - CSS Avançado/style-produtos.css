@@ -215,6 +215,8 @@ form label, form legend{
 
 .botao-enviar:hover{
     background: darkorange;
-    /*A propriedade transform tem muitas possibilidades, uma delas é aumentar o tamanho do elemento, para isso usamos o scale(escala) e definimos a proporção que queremos, ele mesmo faz o calculo multiplicando ele por 1.2*/
+    /*A propriedade transform tem muitas possibilidades, uma delas é aumentar o tamanho do elemento, para isso usamos o scale(escala) e definimos a proporção que queremos, ele mesmo faz o calculo multiplicando ele por 1.2.
+    Explicação do Teacher:
+    Utilizamos a propriedade transform: scale() para aumentar um elemento proporcionalmente.*/
     transform:scale(1.2);
 }
