@@ -144,7 +144,7 @@ vai ficar verde*/
 .produto-preco{
     font-size: 22px;
     font-weight: bold;
-    margin: 10px 0 0;
+    margin-top: 10px;
 }
 
 footer{
@@ -161,7 +161,7 @@ footer{
 }
 
 /*centralizando todo o conteúdo*/
-.centralizando{
+main {
     width: 940px;
     margin: 0 auto;
 }
@@ -246,6 +246,8 @@ th, td{
     /*2em transforma a fonte em duas vezes o valor padrão, por exemplo, a fonte tem tamanho 15, ela será transformada em 30 proporcionalmente*/
     font-size: 2em;
     margin: 0 0 1em;
+    clear: left;
+    /*o clear limpa o float, pq o float altera tudo que estiver a baixo dele.*/
 }
 
 .principal p {
@@ -258,6 +260,15 @@ th, td{
 
 .principal em {
     font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    /*Tanto o float:left quanto o float: right servem para que o elemento se destaque na tela,
+    deixe de ocupar o espaço em que estava,
+    para que os outros elementos possam se posicionar ao redor dele*/
+    margin:0 20px 20px 0;
 }
 
 .imagembeneficios{
