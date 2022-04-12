@@ -167,8 +167,8 @@ footer{
 
 /*centralizando todo o conteúdo*/
 main {
-    width: 940px;
-    margin: 0 auto;
+
+
 }
 
 .formulario {
@@ -255,6 +255,13 @@ th, td{
     /*o clear limpa o float, pq o float altera tudo que estiver a baixo dele.*/
 }
 
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
 .principal p {
     margin: 0 0 1em;
 }
@@ -278,6 +285,13 @@ th, td{
 
 .mapa {
     padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+    /*como fazer transição de cores*/
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p {
@@ -287,6 +301,7 @@ th, td{
 
 .beneficios{
     padding: 3em 0;
+    background: #888888;
 }
 
 .conteudo-beneficios{
@@ -298,6 +313,16 @@ th, td{
     width: 40%;
     display: inline-block;
     vertical-align: top;
+}
+
+.itens{
+    line-height:1.5;
+    /*Essa propriedade dá espaçamento entre as linhas*/
+}
+
+.itens:first-child{
+    /*usando uma pseudo-classe para deixar o primeiro item em negrito, que pode ser first-child(primeiro da lista), last-child(ultimo da lista) ou nth-child()(dentro do parentese você coloca o número em que o elemento que você quer mudar está. Se adicionar o n após o número, você pode selecionar os números pares 2n por exemplo)*/
+    font-weight: bold;
 }
 
 .imagem-beneficios{
