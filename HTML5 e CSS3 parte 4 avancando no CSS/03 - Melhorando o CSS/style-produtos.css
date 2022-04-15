@@ -255,6 +255,10 @@ th, td{
     /*o clear limpa o float, pq o float altera tudo que estiver a baixo dele.*/
 }
 
+/*vemos aqui como transformar somente a primeira letra dos títulos em negrito
+.titulo-principal:first-letter{
+    font-weight: bold;
+}*/
 .principal{
     padding: 3em 0;
     background: #fefefe;
@@ -323,6 +327,15 @@ th, td{
 .itens:first-child{
     /*usando uma pseudo-classe para deixar o primeiro item em negrito, que pode ser first-child(primeiro da lista), last-child(ultimo da lista) ou nth-child()(dentro do parentese você coloca o número em que o elemento que você quer mudar está. Se adicionar o n após o número, você pode selecionar os números pares 2n por exemplo)*/
     font-weight: bold;
+}
+
+/*colocando a estrela antes de cada item.
+Quando queremos criar um elemento na página,
+via CSS,
+antes do elemento do HTML,
+usamos a propriedade :before.*/
+.itens:before{
+    content:"🟊";
 }
 
 .imagem-beneficios{
