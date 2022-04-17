@@ -1,0 +1,11 @@
+{
+    "editor.wordWrap": "on",
+    "search.showLineNumbers": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "editor.unfoldOnClickAfterEndOfLine": true,
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "editor.formatOnType": true,
+    "debug.showBreakpointsInOverviewRuler": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true
+}
