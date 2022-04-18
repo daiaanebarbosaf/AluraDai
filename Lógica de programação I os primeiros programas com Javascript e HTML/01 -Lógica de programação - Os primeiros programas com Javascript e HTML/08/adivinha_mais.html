@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredo = Math.round(Math.random() * 10);
+    /*Como não conseguimos acessar o HTML dentro 
+    do Java Script, a querySelector puxa o valor 
+    que o input está entrando para dentro do JavaScript*/
+    var input = document.querySelector("input");
+    input.focus();
+    
+    function verifica(){
+
+        if(input.value == segredo){
+
+            alert("Você ACERTOU!");
+
+        } else {
+            alert("Você ERROU!");
+        }
+        /*Aqui limpa-se o campo para você conseguir digitar
+        outra coisa sem precisar ir apagar. Assim que o código
+        termina de ser executado automáticamente é apagado.*/
+        input.value = "";
+        /*o programa ao terminar de limpar o campo, faz com
+        que o foco, o mouse selecione o campo, sem que você
+        precise clicar lá novamente*/
+        input.focus();
+
+    }
+    /*esse parametro tbm chama a ação de que quando 
+    clicar no botão chama a função que vai verificar 
+    se o segredo é igual ao número que entrou no Input*/
+    var button = document. querySelector("button");
+    /*aqui não usamos o parenteses, pois 
+    o ideal é guardar a função verifica dentro
+    do onclicique, porque ao clicar ele vai
+    fazer o que está na função e aí sim
+    o código dá certo.
+    Explicação do Professor: e como ela não retorna nada, 
+    o valor de button.onclick será undefined. Além disso, 
+    como foram usados os () na chamada da função, ela será 
+    executada antes mesmo de clicarmos no botão.
+    */
+    button.onclick = verifica;
+
+</script>
