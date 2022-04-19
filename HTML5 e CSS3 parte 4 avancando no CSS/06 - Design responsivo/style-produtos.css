@@ -165,12 +165,10 @@ footer{
     margin:20px 0 0;
 }
 
-/*centralizando todo o conteúdo*/
+/*centralizando todo o conteúdo
 main {
-
-
 }
-
+*/
 .formulario {
     /*aqui damos o espaçamento entre o cabeçalho e rodapé*/
     margin: 40px 0;
@@ -391,13 +389,19 @@ terão esse estilo diferente,
 reescrito.*/
 @media screen and (max-width:480px){
     /*aqui estamos inserindo uma altura automática nos elementos que estão dentro dessas classes*/
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .formulario{
         width: auto;
     }
 
     /*a imagem do logo h1 sendo centralizado*/
-    h1, h2{
+    h1, h2, .formulario, .produtos{
         text-align: center;
+        margin: 30px 25px 40px 10px;
+        
+    }
+
+    table{
+        margin: 20px;
     }
     /*o menu que está dentro da TAG nav se torna estática*/
     nav{    
@@ -405,7 +409,7 @@ reescrito.*/
     }
 
     /*ambos ocuparam 100% da página e ficaram um a baixo do outro, assim ficando mais organizado.*/
-    .lista-beneficios, .imagem-beneficios, .produtos, .produtos li {
-        width:100%;
+    .lista-beneficios, .imagem-beneficios, .produtos, .produtos li, .input-padrao, table {
+        width:90%;
     }
 }
