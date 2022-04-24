@@ -99,7 +99,7 @@ nav a:hover{
     vertical-align: top;
     /*os itens vão recarrecar sempre pela linha de cima*/
     margin: 0 1.5%;
-    padding: 30px 20px;
+    padding: 50px 20px;
     box-sizing: border-box;
     /*essa linha de comando faz com que o item
     com o tamanho dele*/
@@ -171,7 +171,7 @@ main {
 */
 .formulario {
     /*aqui damos o espaçamento entre o cabeçalho e rodapé*/
-    margin: 40px 0;
+    margin: 40px 20px;
 }
 
 form label, form legend{
@@ -225,7 +225,7 @@ form label, form legend{
 }
 
 table{
-    margin: 20px 0 40px;
+    margin: 20px 20px 40px;
 }
 
 thead{
@@ -389,7 +389,7 @@ terão esse estilo diferente,
 reescrito.*/
 @media screen and (max-width:480px){
     /*aqui estamos inserindo uma altura automática nos elementos que estão dentro dessas classes*/
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .formulario{
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
         width: auto;
     }
 
