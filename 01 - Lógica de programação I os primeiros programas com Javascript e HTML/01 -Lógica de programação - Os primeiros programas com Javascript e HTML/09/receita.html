@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+
+<h1>Receitas do Yan</h1>
+
+<script>
+    /*array declarada e vazia*/
+    var ingredientes = [];
+    /*aqui é capturada a quantidade de elementos
+    array terá*/
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+    var contador = 1;
+
+    /*enquanto contador for menor ou igual a quantidade
+    o teste é feito*/
+    while(contador <= quantidade) {
+
+        /*neste momento os ingredientes são capiturados
+        e o contador é mostrado*/
+        var ingrediente = prompt("Informe o ingrediente " + contador);
+        
+        /*Essa variável inicia com o false e só é 
+        verdadeira, se o elemento existir*/
+        var achou = false;
+        console.log(ingredientes);
+
+        /*aqui estamos verificando de existe algum
+        ingrediente igual em todas as posições
+        se achou for verdadeiro ele pára e diz:
+        "Tem ingrediente repetido, por favor digite outro".*/
+        for (var posicao = 0; posicao < quantidade; posicao++){
+            console.log(ingredientes[posicao])
+            if(ingredientes[posicao] == ingrediente){
+
+                /*aqui testamos se a variável ACHOU para 
+                saber se incluímos ou não o ingrediente.*/
+                achou = true;
+                /*Se verdadeira como acima, mostramos a mensagem abaixo*/
+                alert("Tem ingrediente repetido, por favor digite outro")
+            }
+
+            break;
+        }
+        /*enquanto for igual ele não vem para esse IF.
+        Só depois de digitar um item que não seja igual
+        ele passa para essa linha empurrando o novo item
+        para a array ingredientes.*/
+        if (achou == false) {
+
+            ingredientes.push(ingrediente);
+            contador++;
+            
+        }
+        
+    }
+
+    console.log(ingredientes);
+
+</script>
