@@ -99,6 +99,7 @@ nav a:hover{
     vertical-align: top;
     /*os itens vão recarrecar sempre pela linha de cima*/
     margin: 0 1.5%;
+    margin-bottom: 2.8rem;
     padding: 50px 20px;
     box-sizing: border-box;
     /*essa linha de comando faz com que o item
