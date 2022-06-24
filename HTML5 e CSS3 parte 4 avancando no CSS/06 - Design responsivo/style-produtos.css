@@ -65,7 +65,7 @@ nav a{
     /*peso da fonte em negrito*/
     font-weight: bold;
     /*tamanho da fonte*/
-    font-size: 22px;
+    font-size: 1.5rem;
     /*aqui retiramos o sublinhado padrão*/
     text-decoration: none;
 
@@ -117,9 +117,9 @@ nav a:hover{
     border-style: solid;*/
 
     /*declaração unificada da borda*/
-    border: 2px solid #000000;
+    border: 0.2rem solid #000000;
     /*arredondando os campus*/
-    border-radius: 10px; 
+    border-radius: 1rem; 
 }
 
 /*No hover, mapeamos o comportamento do mouse por cima do elemento, e podemos usar isso para destacar visualmente o elemento em questão.*/
@@ -135,22 +135,22 @@ vai ficar verde*/
 
 /*quando passar o mouse por cima do h2, ele vai mudar de tamanho*/
 .produtos li:hover h2{  
-    font-size: 34px;
+    font-size: 1.8rem;
 }
 
 .produtos h2{
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .produto-descricao{
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .produto-preco{
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 footer{
