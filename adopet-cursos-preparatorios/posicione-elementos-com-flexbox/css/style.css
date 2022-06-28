@@ -321,17 +321,37 @@ body {
 	display: flex;
 	flex-direction: column;/*ou flex-flow: colum wrap*/
 	flex-wrap: wrap; /* ou flex-flow: colum wrap*/
-	height: 16rem;/*ou 250px*/
+	height: 250px;/*ou 16rem*/
 }
 
 .conteudoPrincipal-cursos {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	
 }
 
 .conteudoPrincipal-cursos-link {
 	width: 23%;
-	margin-bottom: 1%;
+	margin: 1%;
 }
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+	margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+	/*======CONFIGURAÇÕES MOBILE======*/
+
+/**/@media (max-width: 1000px){
+  .cabecalhoPrincipal-nav {
+		flex-direction: column;
+		}	
+	
+		.cabecalhoPrincipal .container {
+			flex-direction: column;
+			align-items: initial;
+			text-align: center;
+		}	
+	}
