@@ -1,0 +1,5 @@
+align-items
+
+A propriedade align-items faz com que os elementos dentro do pai que está com flex se alinhem verticalmente, 
+portanto, pra eles ficarem alinhados no centro podemos usar align-items: center, colocando essa propriedade 
+no pai dos elementos que queremos alinhar, no caso cabecalho.
