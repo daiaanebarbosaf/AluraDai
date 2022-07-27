@@ -10,5 +10,7 @@
   background-image: url('../img/fortnite.jpg');
 
   grid-column-start: 1;/*aqui é defido onde a coluna irá começar*/
-  grid-column-end: 3;/*E aqui onde termina*/
+  grid-column-end: 4;/*E aqui onde termina*/
+  grid-row-start: 1;/*é defido onde a linha irá começar*/
+  grid-row-end: 3; /*E aqui onde termina*/
 }
