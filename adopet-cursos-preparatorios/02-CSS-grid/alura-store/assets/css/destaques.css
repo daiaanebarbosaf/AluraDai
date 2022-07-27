@@ -7,25 +7,27 @@
 }
 
 .destaques__principal {
-  background-image: url('../img/fortnite.jpg');
+  /*background-image: url('../img/fortnite.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;/*aqui é definido que a imagem deve ocupar todo o espaço*/
+  background-size: cover; aqui é definido que a imagem deve ocupar todo o espaço*/
 
-  grid-column-start: 1;/*aqui é defido onde a coluna irá começar*/
-  grid-column-end: 4;/*E aqui onde termina*/
-  grid-row-start: 1;/*é defido onde a linha irá começar*/
-  grid-row-end: 3; /*E aqui onde termina*/
+  /*atalhos para ocupar menos espaços no background*/
+  background: url('../img/fortnite.jpg') center / cover no-repeat;
+
+  /*grid-column-start: 1; aqui é defido onde a coluna irá começar
+  grid-column-end: 4; E aqui onde termina
+  grid-row-start: 1; é defido onde a linha irá começar
+  grid-row-end: 3; E aqui onde termina*/
+
+  /*atalhos para ocupar menos espaços no grid*/
+  grid-column: 1 / 4;/*você determina primeiro onde começa e após a barra onde termina em uma linha só*/
+  grid-row: 1 / 3;
 }
 
 .destaques__secundario:nth-child(2) {/*O nth-child faz com que ele pegue apenas as configurações do segundo filho da classe pai*/
-  background-image: url('../img/pubg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('../img/pubg.jpg') center /cover no-repeat;
 
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-column: 4 / 4;
+  grid-row: 1 / 1;
 }
