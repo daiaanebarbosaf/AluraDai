@@ -17,3 +17,15 @@
   grid-row-start: 1;/*é defido onde a linha irá começar*/
   grid-row-end: 3; /*E aqui onde termina*/
 }
+
+.destaques__secundario:nth-child(2) {/*O nth-child faz com que ele pegue apenas as configurações do segundo filho da classe pai*/
+  background-image: url('../img/pubg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
