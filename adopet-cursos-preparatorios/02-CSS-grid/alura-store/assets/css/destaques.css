@@ -8,6 +8,9 @@
 
 .destaques__principal {
   background-image: url('../img/fortnite.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;/*aqui é definido que a imagem deve ocupar todo o espaço*/
 
   grid-column-start: 1;/*aqui é defido onde a coluna irá começar*/
   grid-column-end: 4;/*E aqui onde termina*/
