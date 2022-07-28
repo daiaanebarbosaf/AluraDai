@@ -78,3 +78,7 @@
   width: 50%;
 
 }
+
+.destaques__categorias___link {
+  color: inherit;/*A inherit palavra-chave CSS faz com que o elemento obtenha o valor calculado da propriedade de seu elemento pai.*/
+}
