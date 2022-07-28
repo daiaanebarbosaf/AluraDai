@@ -6,6 +6,16 @@
   height: calc(100vh - 50px);
 }
 
+.destaques__titulo {
+  background: rgba(0, 0, 0, .5);/*esse .5 define o nível de transparencia do elemento, nesse caso ele terá 50% de transparencia*/
+  color: #fdfdfd;
+
+  padding: .6rem;
+  width: 100%;
+
+  text-align: center;
+}
+
 .destaques__principal {
   /*background-image: url('../img/fortnite.jpg');
   background-position: center;
