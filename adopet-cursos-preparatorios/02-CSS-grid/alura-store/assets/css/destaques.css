@@ -8,7 +8,6 @@
 }
 
 .destaques{
-  background: rosybrown;
   display: grid;
   grid-gap: .2rem;
   grid-template-columns: 25% 25% 25% 25%;
