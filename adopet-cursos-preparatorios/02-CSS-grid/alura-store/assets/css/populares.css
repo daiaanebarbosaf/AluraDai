@@ -2,6 +2,14 @@
   padding: 3rem 0;
 }
 
+.populares__conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: conteudo;
+  
+  padding: 1rem 0;
+}
+
 .populares__card {
   background: #fdfdfd;
 
@@ -9,7 +17,8 @@
   grid-template-areas: 
     "card-imagem"
     "card-corpo";
-  grid-template-columns: 100%;  
+  grid-template-columns: 100%;
+  
 }
 
 .populares__card___imagem {
