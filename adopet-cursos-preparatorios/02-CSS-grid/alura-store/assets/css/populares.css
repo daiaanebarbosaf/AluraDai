@@ -41,3 +41,8 @@
 
   padding: .75rem;
 }
+
+.populares__card___titulo {
+  color: #333333;
+  font-size: 1.5rem;
+}
