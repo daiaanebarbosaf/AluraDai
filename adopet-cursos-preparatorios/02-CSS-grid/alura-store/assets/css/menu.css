@@ -3,6 +3,7 @@
   padding: .5rem 1rem;
 }
 
-.menu__link:hover {
+.menu__link:hover, 
+.menu__link.ativo {
   border-bottom: 2px solid #0073e6;
 }
