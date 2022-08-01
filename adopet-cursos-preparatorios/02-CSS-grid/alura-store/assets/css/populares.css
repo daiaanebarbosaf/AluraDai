@@ -62,3 +62,10 @@
   margin-top: 3rem;
   margin-left: -3rem;
 }
+
+.populares__titulo {
+  font-weight: 500;
+}
+.populares__icone {
+  margin-right: .25rem;
+}
