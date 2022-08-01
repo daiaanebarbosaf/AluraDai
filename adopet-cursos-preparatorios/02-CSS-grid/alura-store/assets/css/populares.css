@@ -69,3 +69,9 @@
 .populares__icone {
   margin-right: .25rem;
 }
+
+.populares__cabecalho {
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+}
