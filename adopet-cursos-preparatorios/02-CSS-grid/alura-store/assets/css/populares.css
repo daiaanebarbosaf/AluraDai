@@ -24,6 +24,10 @@
   width: calc(20% - 1rem);
 }
 
+.populares__card:last-child {/*aplica no último filho*/
+  margin-right: 0;
+}
+
 .populares__card___imagem {
   grid-area: card-imagem;
   height: 100%;
