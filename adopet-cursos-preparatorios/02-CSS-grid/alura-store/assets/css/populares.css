@@ -51,3 +51,14 @@
   color: #808080;
   font-size: .9rem;
 }
+
+.populares__card___descricao {
+  color: #333333;
+  line-height: 1.5;
+
+  margin: 1rem 0;
+  text-align: justify;
+
+  margin-top: 3rem;
+  margin-left: -3rem;
+}
