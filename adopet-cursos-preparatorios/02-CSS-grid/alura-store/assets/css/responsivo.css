@@ -1,4 +1,8 @@
 @media screen and (min-width: 0){
+  .destaques__principal {
+    grid-column: 1 / 5;
+  }
+
   .destaques__secundario:nth-child(2),
   .destaques__secundario:nth-child(3),
   .destaques__secundario:nth-child(4),
