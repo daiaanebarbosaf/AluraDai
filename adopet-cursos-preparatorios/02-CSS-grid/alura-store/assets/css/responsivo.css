@@ -1,5 +1,6 @@
 @media screen and (min-width: 0){
-  .destaques__principal {
+  .destaques__principal,
+  .destaques__categorias {
     grid-column: 1 / 5;
   }
 
