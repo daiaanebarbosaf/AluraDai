@@ -40,36 +40,24 @@
   grid-row-end: 3; E aqui onde termina*/
 
   /*atalhos para ocupar menos espaços no grid*/
-  grid-column: 1 / 4;/*você determina primeiro onde começa e após a barra onde termina em uma linha só*/
+  /*grid-column: 1 / 4;você determina primeiro onde começa e após a barra onde termina em uma linha só*/
   grid-row: 1 / 3;
 }
 
 .destaques__secundario:nth-child(2) {/*O nth-child faz com que ele pegue apenas as configurações do segundo filho da classe pai*/
   background: url('../img/pubg.jpg') center /cover no-repeat;
-
-  grid-column: 4 / 4;
-  grid-row: 1 / 1;
 }
 
 .destaques__secundario:nth-child(3) {
   background: url('../img/slack.png') center /cover no-repeat;
-
-  grid-column: 4 / 4;
-  grid-row: 2 / 2;
 }
 
 .destaques__secundario:nth-child(4) {
   background: url('../img/whatsapp.png') center /cover no-repeat;
-
-  grid-column: 4 / 4;
-  grid-row: 3 / 3;
 }
 
 .destaques__secundario:nth-child(5) {
   background: url('../img/cs-go.jpg') center /cover no-repeat;
-
-  grid-column: 3 / 3;
-  grid-row: 3 / 3;
 }
 
 .destaques__categorias {
